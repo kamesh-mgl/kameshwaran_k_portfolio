@@ -895,6 +895,7 @@ h2.section-title::after {
         left: 15px;
     }
 }
+/* ------------------------------------------------------------------- */
 /* This rule hides the line break on desktop and larger tablets */
 .mobile-break {
     display: none;
