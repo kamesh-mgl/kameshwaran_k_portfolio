@@ -199,6 +199,7 @@ h2.section-title::after {
     display: flex;
     gap: 1rem;
     font-size: 1.5rem;
+    justify-content: center;
 }
 
 .socials a {
@@ -751,6 +752,7 @@ h2.section-title::after {
     color: var(--accent-color);
 }
 
+
 .footer-col ul {
     list-style: none;
     padding: 0;
@@ -764,6 +766,7 @@ h2.section-title::after {
 .footer-col a {
     color: var(--text-secondary);
     transition: color 0.3s ease;
+   
 }
 
 .footer-col a:hover {
