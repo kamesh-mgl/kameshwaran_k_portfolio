@@ -895,3 +895,14 @@ h2.section-title::after {
         left: 15px;
     }
 }
+/* This rule hides the line break on desktop and larger tablets */
+.mobile-break {
+    display: none;
+}
+
+/* This media query activates the line break on screens up to 768px wide */
+@media screen and (max-width: 768px) {
+    .mobile-break {
+        display: block;
+    }
+}
