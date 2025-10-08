@@ -157,28 +157,62 @@ document.addEventListener('DOMContentLoaded', () => {
         projCards = document.querySelectorAll('.proj-card');
         updateSliderPosition();
     });
-    
+
     window.addEventListener('load', updateSliderPosition);
 
-    // --- Form Submission Handling ---
-    // With FormSubmit, we no longer need the fetch block.
-    // The form submission is handled by the browser directly.
-    const contactForm = document.getElementById('contactForm');
-    const formStatus = document.getElementById('formStatus');
+    // --- Form Submission Handler (with Debugging) ---
 
-    if (contactForm && formStatus) {
-        contactForm.addEventListener('submit', (event) => {
-            // Prevent the default submission to show a status message first
+    // Find the form and status elements in the HTML
+    const contactForm = document.getElementById("contactForm");
+    const formStatus = document.getElementById("formStatus");
+
+    // This is a check to see if the script found your form on the page
+    if (contactForm) {
+        console.log("Form found successfully."); // You should see this in the console
+
+        contactForm.addEventListener("submit", function (event) {
             event.preventDefault();
-            formStatus.textContent = 'Sending message...';
-            formStatus.style.color = '#fff';
+            console.log("Form submission intercepted."); // You should see this when you click 'Send'
 
-            // Wait a moment before submitting the form to allow the message to display
-            setTimeout(() => {
-                event.target.submit();
-            }, 500);
+            const data = new FormData(event.target);
+
+            fetch("https://formsubmit.co/ajax/kameshmgl@gmail.com", {
+                method: 'POST',
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                // Check if the server responded successfully (status code 200-299)
+                if (response.ok) {
+                    console.log("Server responded OK.");
+                    return response.json(); // Continue to the next .then()
+                } else {
+                    // If the server responded with an error (like 400, 404, 500)
+                    console.error("Server responded with an error:", response.status);
+                    // Try to get more details from the response body
+                    return response.json().then(errorData => {
+                        // We throw an error to jump to the .catch() block
+                        throw new Error(errorData.message || "Something went wrong on the server.");
+                    });
+                }
+            }).then(data => {
+                // This block runs only if the submission was successful
+                console.log("Submission successful! Data:", data);
+                contactForm.reset();
+                formStatus.innerHTML = "Thanks! Your message has been sent.";
+                formStatus.style.color = "green";
+            }).catch(error => {
+                // This block runs if ANYTHING went wrong in the fetch chain
+                console.error("An error occurred:", error);
+                formStatus.innerHTML = `Oops! There was a problem: ${error.message}`;
+                formStatus.style.color = "red";
+            });
         });
+    } else {
+        // If the script can't find your form at all
+        console.error("Error: Could not find element with id='contactForm'.");
     }
 
-    
+
 });

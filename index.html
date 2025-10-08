@@ -24,13 +24,13 @@
       <span class="logo"><i class="bi bi-person-fill" style="padding: 0px 3px;"></i>kamesh.portfolio</span>
       <ul class="nav-links">
         <li><a href="#hero" class="nav-link active">About</a></li>
-        <li><a href="#skills" class="nav-link active">Skills</a></li>
-        <li><a href="#projects" class="nav-link active">Projects</a></li>
-        <li><a href="#experience" class="nav-link active">Experience</a></li>
-        <li><a href="#education" class="nav-link active">Education</a></li>
-        <li><a href="#certifications" class="nav-link active">Certifications</a></li>
-        <li><a href="#achievements" class="nav-link active">Achievements</a></li>
-        <li><a href="#contact" class="nav-link active">Contact</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link ">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
 
       <button class="hamburger" aria-label="menu"><i class="bi bi-list"></i></button>
@@ -156,7 +156,7 @@
                   <h3> Banking	Management	System</h3>
                   <p>Developed a console-based banking system to manage customer accounts, deposits, withdrawals, and fund transfers.</p>
                   <div class="proj-actions">
-                      <a href="./Assets/Navibus-master.zip" target="_blank" class="btn small">Code</a>
+                      <a href="./Assets/Bank-Management-System.zip" target="_blank" class="btn small">Code</a>
                   </div>
                   
                 </div>
@@ -319,14 +319,14 @@
         <h2 class="section-title"><i class="bi bi-chat-square-text-fill"></i> Get in Touch</h2>
         <div class="contact-card">
           <p>Want to collaborate or hire? Send me a message. I'm always open to new opportunities.</p>
-          <form id="contactForm" class="form" action="https://formsubmit.co/kameshmgl@gmail.com" method="POST">
+          <form id="contactForm" class="form">
             <div class="form-row">
               <input name="name" id="name" type="text" required placeholder="Your name" />
               <input name="email" id="email" type="email" required placeholder="Your email" />
             </div>
             <input name="subject" id="subject" type="text" placeholder="Subject" required />
             <textarea name="message" id="message" rows="6" placeholder="Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
+            <button type="submit" class="btn" id="send-message">Send Message</button>
             <div id="formStatus" class="form-status" aria-live="polite"></div>
           </form>
         </div>

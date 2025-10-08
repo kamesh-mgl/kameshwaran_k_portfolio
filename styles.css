@@ -907,3 +907,10 @@ h2.section-title::after {
         display: block;
     }
 }
+/* --- Contact Form Status Message Styling --- */
+.form-status {
+    margin-top: 15px; /* Adds space above the message */
+    font-weight: 500;   /* Makes the text a bit bolder */
+    text-align: center; /* Centers the message */
+    transition: opacity 0.3s ease-in-out; /* Optional: for a nice fade-in effect */
+}
