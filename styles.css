@@ -914,6 +914,11 @@ h2.section-title::after {
 
 /* This media query activates the line break on screens up to 768px wide */
 @media screen and (max-width: 768px) {
+
+    .intro{
+        padding: 2px;
+    }
+    
     .mobile-break {
         display: block;
     }
