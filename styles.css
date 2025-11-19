@@ -200,6 +200,7 @@ h2.section-title::after {
     gap: 1rem;
     font-size: 1.5rem;
     justify-content: center;
+    align-items: center;
 }
 
 .socials a {
