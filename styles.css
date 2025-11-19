@@ -647,6 +647,13 @@ h2.section-title::after {
     font-size: 0.9rem;
     color: var(--text-secondary);
     margin-bottom: 1rem;
+    /* height: 80px; */
+}
+#view-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
 }
 
 .proj-btn {
@@ -674,6 +681,10 @@ h2.section-title::after {
 
 .proj-btn:hover {
     background: rgba(0, 0, 0, 0.8);
+}
+
+#res-img{
+    object-position: top;
 }
 
 /* --- Contact Section --- */

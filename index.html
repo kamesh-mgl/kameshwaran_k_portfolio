@@ -42,14 +42,9 @@
       <div class="container hero-grid">
         <div class="intro">
           <h1 class="slide-in">Hi, I’m <br class="mobile-break"><span class="accent">Kameshwaran K</span></h1>
-         <p class="fade-in delay-1">
+          <p class="fade-in delay-1">
             I am an aspiring and enthusiastic Software Developer with
-            solid foundation in Core Java, SQL, HTML, CSS, and JavaScript.
-            <br><br>
-            At present, I am strengthening my skills in Data Structures and Algorithms (DSA) to improve
-            my problem-solving and coding efficiency,
-            while also preparing learn to advanced Java concepts to become a
-            well-rounded Full Stack Developer.
+            solid foundation in Core Java, SQL, HTML, CSS, JavaScript and React JS.
             <br><br>
             I’m eager to start my career as a
             Software Developer, where I can apply my skills to real-time projects, contribute to organizational growth,
@@ -57,8 +52,7 @@
           </p>
 
           <div class="cta fade-in delay-2">
-            <a href="./Assets/Kameshwaran_K_Resume.pdf"
-              class="btn download-btn" target="_blank">Download Resume</a>
+            <a href="./Assets/Kameshwaran_K_Resume.pdf" class="btn download-btn" target="_blank">Download Resume</a>
             <div class="socials">
               <a href="http://www.linkedin.com/in/kameshwaran-k-4bb286282" target="_blank" aria-label="LinkedIn"><i
                   class="bi bi-linkedin"></i></a>
@@ -96,6 +90,9 @@
               <div class="skill-item"><img
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                   alt="JavaScript" /><span>JavaScript</span></div>
+              <div class="skill-item"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  alt="React JS" /><span>React JS</span></div>
             </div>
           </div>
           <div class="skill-category">
@@ -105,8 +102,8 @@
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"
                   alt="Oracle SQL" /><span>Oracle SQL</span></div>
               <div class="skill-item"><img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMMMws7rPtchjHY5odL-gMT_qlY3ASpQPQWw&s"
-                  alt="PL SQL" /><span>PL SQL</span></div>
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                  alt="Postgre SQL" /><span>Postgres SQL</span></div>
             </div>
           </div>
           <div class="skill-category">
@@ -138,29 +135,48 @@
                   alt="Bus Tracking System">
                 <div class="proj-body">
                   <h3>Real-Time Bus Tracking System</h3>
-                  <p> Built a real-time bus tracking web application using HTML, CSS, JavaScript, and Firebase Realtime Database.</p>
+                  <p> Built a real-time bus tracking web application using HTML, CSS, JavaScript, and Firebase Realtime
+                    Database with a GPS device integrated with ESP32, Neo-7m and portable hotspot.</p>
                   <div class="proj-actions">
-                    <a href="https://navibus.vercel.app/" target="_blank" class="btn small">View
+                    <a href="https://navibus.vercel.app/" target="_blank" class="btn small me-2">View
                       Project</a>
-                      <a href="./Assets/Navibus-master.zip" target="_blank" class="btn small">Code</a>
+                    <a href="./Assets/Navibus-master.zip" target="_blank" class="btn small">Code</a>
                   </div>
                 </div>
               </div>
 
+               <div class="proj-card">
+                <img id="res-img"
+                  src="./Assets/restaurant.png"
+                  alt="Restaurant Menu Manager">
+                <div class="proj-body">
+                  <h3>Restaurant Menu Manager</h3>
+                  <p>A React-based restaurant menu platform with,
+                     dynamic routing, and seamless item management. 
+                     Built with reusable components and optimized for fast, reload-free browsing.</p>
+                  <div class="proj-actions">
+                    <a href="https://restaurant-khaki-delta.vercel.app/menu" target="_blank" class="btn small me-2">View
+                      Project</a>
+                      <a href="https://github.com/kamesh-mgl/restaurant.git" target="_blank" class="btn small">Code</a>
+                  </div>
+                </div>
+              </div>
 
               <div class="proj-card">
                 <img
                   src="https://media.licdn.com/dms/image/v2/D5612AQGURCOFAQtX5w/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1691988180631?e=2147483647&v=beta&t=qQReyJXC-R1zNKXvvx42h_jIRU7U-ECeduk_0dshC1k"
-                  alt="Bus Tracking System">
+                  alt="Banking Management System">
                 <div class="proj-body">
-                  <h3> Banking	Management	System</h3>
-                  <p>Developed a console-based banking system to manage customer accounts, deposits, withdrawals, and fund transfers.</p>
+                  <h3> Banking Management System</h3>
+                  <p>Developed a console-based banking system to manage customer accounts, deposits, withdrawals, and
+                    fund transfers.</p>
                   <!-- <div class="proj-actions">
                       <a href="./Assets/Bank-Management-System.zip" target="_blank" class="btn small">Code</a>
                   </div> -->
-                  
                 </div>
               </div>
+
+             
 
               <div class="proj-card">
                 <img src="https://i.ytimg.com/vi/HFGP1YqUPy0/maxresdefault.jpg" alt="Home Automation System">
@@ -175,20 +191,15 @@
                 </div>
               </div>
 
-              <div class="proj-card">
-                <img
-                  src="https://www.shutterstock.com/image-vector/vector-illustration-half-past-three-600nw-2258447269.jpg"
-                  alt="RTC Display (Arduino)">
+              <div id="view-more" class="proj-card">
                 <div class="proj-body">
-                  <h3>RTC Display (Arduino)</h3>
-                  <p>Real-Time Clock display with Arduino UNO and 16x2 LCD showing time, date, and
-                    day.</p>
-                  <!-- <div class="proj-actions">
-                    <a href="https://github.com/kamesh-mgl" target="_blank" class="btn small">View
-                      Project</a>
-                  </div> -->
+                  <div class="proj-actions">
+                    <a href="https://github.com/kamesh-mgl" target="_blank" class="btn small">View more</a>
+                  </div>
                 </div>
               </div>
+
+
             </div>
           </div>
           <button class="proj-btn prev" aria-label="Previous Project"><i class="bi bi-chevron-left"></i></button>
@@ -202,7 +213,7 @@
         <h2 class="section-title"><i class="bi bi-briefcase-fill"></i> Experience</h2>
         <div class="experience-grid">
           <div class="experience-card">
-           <h3>Internship <i class="bi bi-arrow-right"></i> Sunshiv Electronic Solutions</h3>
+            <h3>Internship <i class="bi bi-arrow-right"></i> Sunshiv Electronic Solutions</h3>
             <p class="period"><em>Jul 2024 - Aug 2024</em></p>
             <ul>
               <li>Designed and modified 15+ PCB layouts using Eagle and CopperCAM for circuit
@@ -213,12 +224,11 @@
                 project execution, strengthening both hardware and software development skills.</li>
             </ul>
             <br>
-            <a href="./Assets/Intern_Work.pdf" class="btn"
-              target="_blank">My Intern Works</a>
+            <a href="./Assets/Intern_Work.pdf" class="btn" target="_blank">My Intern Works</a>
           </div>
           <div class="experience-card">
             <h3>Training <i class="bi bi-arrow-right"></i> J Spiders</h3>
-           <p class="period"><em>Jun 2025 - Present</em></p>
+            <p class="period"><em>Jun 2025 - Present</em></p>
             <ul>
               <li>Intensive training in Java Full Stack Development , including advanced topics in
                 Java, Spring, Hibernate, and modern web frameworks.</li>
