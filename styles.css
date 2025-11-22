@@ -638,6 +638,8 @@ h2.section-title::after {
     padding: 1.5rem;
 }
 
+
+
 .proj-body h3 {
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
@@ -889,6 +891,14 @@ h2.section-title::after {
         gap: 0;
     }
 
+    .proj-actions{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: start;
+    align-items: start; 
+}
+
     .timeline::after {
         left: 31px;
     }
@@ -910,6 +920,7 @@ h2.section-title::after {
     .timeline-item:nth-child(even) .timeline-icon {
         left: 15px;
     }
+
 }
 /* ------------------------------------------------------------------- */
 /* This rule hides the line break on desktop and larger tablets */
